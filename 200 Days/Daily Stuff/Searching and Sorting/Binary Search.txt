@@ -1,0 +1,9 @@
+https://www.spoj.com/problems/AGGRCOW/
+https://www.spoj.com/problems/EKO/
+https://www.spoj.com/problems/PIE/
+https://www.spoj.com/problems/ABCDEF/
+https://www.interviewbit.com/problems/painters-partition-problem/
+https://www.spoj.com/problems/SUMFOUR/
+https://leetcode.com/problems/count-complete-tree-nodes/
+https://www.spoj.com/problems/BALLOT/
+https://www.geeksforgeeks.org/n-th-root-number/

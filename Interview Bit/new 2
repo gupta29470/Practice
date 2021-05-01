@@ -1,0 +1,15 @@
+import java.util.*;
+import java.io.*;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        int n=3;
+        ArrayList<Integer> arr=new ArrayList<>();
+        arr.add(1);
+        for(int i=1;i<=n;i++){
+           arr.add(((arr.get(i-1))*(n-i+1))/i);
+        }
+        System.out.println(arr);
+    }
+}

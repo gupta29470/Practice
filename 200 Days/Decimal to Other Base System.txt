@@ -1,0 +1,26 @@
+Decimal to Other Base System
+Steps
+
+Step 1 − Divide the decimal number to be converted by the value of the new base.
+
+Step 2 − Get the remainder from Step 1 as the rightmost digit (least significant digit) of new base number.
+
+Step 3 − Divide the quotient of the previous divide by the new base.
+
+Step 4 − Record the remainder from Step 3 as the next digit (to the left) of the new base number.
+
+Repeat Steps 3 and 4, getting remainders from right to left, until the quotient becomes zero in Step 3.
+
+The last remainder thus obtained will be the Most Significant Digit (MSD) of the new base number.
+
+Example −
+Decimal Number: 2910
+
+Calculating Binary Equivalent −
+
+Step	Operation	Result	Remainder
+Step 1	29 / 2	14	1
+Step 2	14 / 2	7	0
+Step 3	7 / 2	3	1
+Step 4	3 / 2	1	1
+Step 5	1 / 2	0	1

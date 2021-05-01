@@ -1,0 +1,71 @@
+run:
+i:0
+low:0
+high:2
+1
+ABC
+i:1
+low:1
+high:2
+1
+ABC
+Final :ABC
+2
+ABC
+i:2
+low:1
+high:2
+1
+ACB
+Final :ACB
+2
+ABC
+2
+ABC
+i:1
+low:0
+high:2
+1
+BAC
+i:1
+low:1
+high:2
+1
+BAC
+Final :BAC
+2
+BAC
+i:2
+low:1
+high:2
+1
+BCA
+Final :BCA
+2
+BAC
+2
+ABC
+i:2
+low:0
+high:2
+1
+CBA
+i:1
+low:1
+high:2
+1
+CBA
+Final :CBA
+2
+CBA
+i:2
+low:1
+high:2
+1
+CAB
+Final :CAB
+2
+CBA
+2
+ABC
+BUILD SUCCESSFUL (total time: 0 seconds)

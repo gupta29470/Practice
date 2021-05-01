@@ -1,0 +1,123 @@
+
+COOKIE PERSONALIZED FORM.html
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personalized the title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form action="cookie-personalized-form.jsp">
+            Your favorite programming language 
+            <select name="favoritelanguage">
+                <option>Java</option>
+                <option>Java script</option>
+                <option>Python</option>
+                <option>Ruby</option>
+                <option>C++</option>
+            </select>
+            <br></br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
+
+
+
+COOKIE PERSONALIZED FORM.jsp
+<%-- 
+    Document   : cookie-personalized-form
+    Created on : Aug 31, 2020, 5:57:20 PM
+    Author     : Aakash
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Personalized the title</title>
+        <%
+            String favLang = request.getParameter("favoritelanguage");
+            
+            Cookie c = new Cookie("myApp.favoritelanguage", favLang);
+            c.setMaxAge(60*60*24*365);
+            response.addCookie(c);
+            
+        %>
+    </head>
+    <body>
+        Thanks! we set your programming language : ${param.favoritelanguage}
+        <br></br>
+        <a href="cookies-homepage.jsp">Return to homepage.</a>
+        
+    </body>
+</html>
+
+
+
+
+COOKIE PERSONALIZED HOMEPAGE.jsp
+<%-- 
+    Document   : cookies-homepage
+    Created on : Aug 31, 2020, 6:04:26 PM
+    Author     : Aakash
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Training Portal</title>
+    </head>
+    <body>
+        <! --  Read Favorite Language -->
+        <%
+            String favLang = "Java";
+            Cookie[] cookie = request.getCookies();
+            
+            if(cookie != null){
+                for (Cookie temp : cookie){
+                    if("myApp.favoritelanguage".equals(temp.getName())){
+                        favLang = temp.getValue();
+                        break;
+                    }
+                }
+            }
+        %>    
+           
+        <!-- now show a personalized page ... use the "favLang" variable -->
+
+        <!-- show new books for this lang -->
+        
+        <h4>New books for <%= favLang %></h4>
+        <ul>
+            <li>Book 1</li>
+            <li>Book 1</li>
+            <li>Book 1</li>
+        </ul>
+        <h4>Hot Jobs for <%= favLang %></h4>
+        <ul>
+            <li>Job 1</li>
+            <li>Job 2</li>
+            <li>Job 3</li>
+        </ul>
+        <h4>Latest News Reports for <%= favLang %></h4>
+        <ul>
+            <li>News 1</li>
+            <li>News 2</li>
+            <li>News 3</li>
+        </ul>
+        <hr>
+        <a href="Cookie-personalized-form.html">Personalize this page</a>
+    </body>
+</html>

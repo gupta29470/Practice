@@ -1,0 +1,131 @@
+
+helloWorld.jsp
+<%-- 
+    Document   : helloWorld
+    Created on : Aug 23, 2020, 1:46:56 AM
+    Author     : Aakash
+--%>
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.demo.jsp.*, java.util.*" %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>First JSP page</title>
+    </head>
+    <body>
+        <h1>JSP Expression!</h1>
+        The time on the server is <%= new java.util.Date()%>
+        <br></br>
+        Converting lower case to upper case: <%=  new String("hello world").toUpperCase()%>
+        <br></br>
+        25 multiply 4 equals to : <%=  +25 * 4%>
+        <br></br>
+        75 less than 70 : <%= 75 < 70%>
+
+        
+
+        <h1>JSP Scriplets!</h1>
+
+        <%
+            for (int i = 1; i < 6; i++) {
+                out.println("<br/> Hello " + i);
+
+            }
+        %>
+
+
+        
+        <h1>JSP Declaration!</h1>
+
+        <%!
+            int sum(int a, int b) {
+                return a + b;
+            }
+        %>
+
+        Sum of a & b is : <%= sum(5, 10)%>
+        <br></br>
+        <%!
+            String makeItLower(String data) {
+                return data.toLowerCase();
+            }
+        %>
+
+        Lower case of input data is : <%= makeItLower("AAKASH GUPTA")%>
+
+
+        <br></br>
+        
+        
+        
+        <h1>Calling method from Java Class!</h1>
+
+        Calling class method : <%= Democlass.makeItUpper("aakash gupta")%>
+        
+        
+        
+        
+        <h1>Testing Built in JSP Server Objects!</h1>
+        
+        Request user agent : <%= request.getHeader("User-Agent") %>
+        <! -- output : Request user agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0 --> 
+       
+        <br></br>
+        
+        Request Language : <%= request.getLocale() %>
+        <! -- output : Request Language : en_US -->
+        
+        
+        
+        <h1>Inheriting another JSP page!</h1>
+        <jsp:include page="helloWorld_1.jsp"/>
+        
+        
+    </body>
+</html>
+
+
+
+helloWorld_1.jsp
+
+
+<%-- 
+    Document   : helloWorld_1
+    Created on : Aug 23, 2020, 3:00:49 AM
+    Author     : Aakash
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1></h1>
+        <p align ="center">
+            Last updated : <%= new java.util.Date() %>
+        </p>
+
+    </body>
+</html>
+
+
+
+
+Democlass.java
+package com.demo.jsp;
+
+/**
+ *
+ * @author Aakash
+ */
+public class Democlass {
+    public static String makeItUpper(String data){
+        return data.toUpperCase();
+    }
+}

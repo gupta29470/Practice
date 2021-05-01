@@ -1,0 +1,87 @@
+
+StudentForm.html
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="StudentResponse.jsp">
+            Enter First Name : <input type ="text" name="firstname"/>
+            <br></br>
+            Enter Last Name : <input type ="text" name ="lastname"/>
+            <br></br>
+            Country : <select name ="country">
+                <option>Brazil</option>
+                <option>Africa</option>
+                <option>India</option>
+                <option>England</option>
+            </select>
+            <br></br>
+            Favorite Programming Language :<br>
+            <input type="radio" name ="favouritelanguage" value="Java">Java     
+            <input type="radio" name ="favouritelanguage" value="C#">C#
+            <input type="radio" name ="favouritelanguage" value="Python">Python
+            <input type="radio" name ="favouritelanguage" value="C++">C++
+            <br></br>
+            How many languages you speak:<br>
+            <input type="checkbox" name="language" value="Hindi">Hindi
+            <input type="checkbox" name="language" value="Marathi">Marathi
+            <input type="checkbox" name="language" value="English">English
+            <input type="checkbox" name="language" value="Spanish">Spanish
+            <br></br>
+            <input type="submit" name ="submit"/>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+StudentResponse.jsp
+<%-- 
+    Document   : StudentResponse
+    Created on : Aug 25, 2020, 4:12:21 AM
+    Author     : Aakash
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Student Confirmation Page</title>
+    </head>
+    <body>
+        <h1>Student Confirmation!</h1>
+        The Student full name is : ${param.firstname} ${param.lastname} 
+        <br></br>
+        He is from : ${param.country}
+        <br></br>
+        His favorite programming language is : ${param.favouritelanguage}
+        <br></br>
+        ${param.firstname} Speaks:
+        <ol type="1">
+        <%
+        String[] lang = request.getParameterValues("language");
+        for(String s : lang){
+            out.print("<li>" + s + "</li>" );
+        }
+        %>
+        </ul>
+    </body>
+</html>
+
+
+
+
+

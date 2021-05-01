@@ -1,0 +1,109 @@
+All company pdf questions  Leetcode ---> https://github.com/MysteryVaibhav/leetcode_company_wise_questions
+
+
+
+
+Permutation of Array such that sum of adjacent elements are not divisible by 3 ---> https://www.geeksforgeeks.org/permutation-of-array-such-that-sum-of-adjacent-elements-are-not-divisible-by-3/
+
+
+
+Permutation of Array such that products of all adjacent elements are even --> https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/?ref=rp
+
+
+
+
+
+Rearrange numbers in an array such that no two adjacent numbers are same ---> https://www.geeksforgeeks.org/rearrange-numbers-in-an-array-such-that-no-two-adjacent-numbers-are-same/
+
+
+
+
+Pep Coding (must recommended) ---> https://www.pepcoding.com/resources/
+
+
+
+
+Interview Cheatsheet All DS time complexity ---> https://github.com/TSiege/Tech-Interview-Cheat-Sheet 
+
+
+
+
+Code Chef Data Structure Tutorial and Practice problems---> https://www.codechef.com/certification/data-structures-and-algorithms/prepare
+
+
+
+Java Collections Exercise --> https://javahungry.blogspot.com/2019/02/collection-programs-in-java-for-interview.html
+
+
+
+Java Tricks for Competitive---> https://www.geeksforgeeks.org/java-tricks-competitive-programming-java-8/
+
+
+
+
+Hackerearth Code Monk ----> https://www.hackerearth.com/practice/codemonk/
+
+
+
+A2Oj ladders ---> https://a2oj.com/ladders
+
+
+
+Read Input Output in java Codeforces ---> https://codeforces.com/blog/entry/7018
+
+
+
+Sort array to avoid TLE ---> https://codeforces.com/blog/entry/7108
+
+
+
+Big Integer ---> https://codeforces.com/blog/entry/17235
+
+
+
+Abdul Bari Algorithms ----> https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O
+
+
+
+
+Mathematics Concepts:
+Ad Hoc Mathematics
+The Simple Ones
+Mathematical Simulation (Brute Force)
+Finding Pattern or Formula
+Grid
+Number systems and Sequences
+Logarithm exponentiation and power
+Polynomial
+Base Number Variant
+Just Ad Hoc
+Java Big Integer
+Basic Features
+Bonus Features
+Combinatorics
+Fibonacci Numbers
+Binomial Coefficients
+Catalan Numbers
+Number Theory
+Prime Numbers
+GCD and LCM
+Factorial
+Prime Factors
+Working with Prime Factors
+Functions involving Prime Factors
+Modifies Sieve
+Modulo Arithmetic
+Euclid/Linear Diophantine Equation
+Probability Theory
+Cycle Finding
+Floyd’s Tortoise‐Hare Algorithm
+Game Theory
+Nim Game (Sprague Grundy Theorem)
+Two Players Game, Minimax
+
+
+
+
+Technical quiz ----> https://www.sanfoundry.com/computer-science-questions-answers/
+
+

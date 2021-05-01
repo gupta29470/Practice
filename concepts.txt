@@ -1,0 +1,19 @@
+int i=5;
+//        int k=i++; 
+//        int j=++i;// i++;int temp=i; i=temp;
+//        // int temp=i;i++;i=temp;
+//        System.out.println(i++);//6
+//        System.out.println(++i);//8
+//        System.out.println(j); //6
+//        System.out.println(k); //5
+//        //Swap Variables
+//        int a = 5, b = 6;
+//        b = a + b - (a = b);
+//        System.out.println(a + " " + b);
+        /*Constructor: 
+         some facts about constructor
+         1) cunstructor has same as class name, by default generated.
+         2) it never returns anything.
+         3) its used to allocate the memory to heap memory.
+         4) Its a member method to class  
+        

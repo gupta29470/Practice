@@ -1,0 +1,5 @@
+Size of empty class
+What is polymorphism. Which one is runtime and which one is compile time
+What is synchronisation in os? (monitor, semphore and mutex locks) concepts of criticl section.
+One tricky question on static keyword
+A file of 100 GB is given and you have to search a pattern and available memory is less than file size.One must be really good with concepts of paging, segmentation, disk scheduling.and search algos(kmp/rabin karp)  to design the solution.
